@@ -5,15 +5,17 @@ using System.Text;
 
 using Xamarin.Forms;
 
+
 namespace artesanato
 {
 	public partial class App : Application
 	{
 		public App ()
 		{
-			InitializeComponent();
+			//InitializeComponent();
 
-			MainPage = new artesanato.MainPage();
+			MainPage = new MenuPage();
+			
 		}
 
 		protected override void OnStart ()

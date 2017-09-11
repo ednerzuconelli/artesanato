@@ -2,7 +2,7 @@
 using SQLiteNetExtensions.Attributes;
 using System;
 
-namespace Arte
+namespace artesanato
 {
     class Pedido
     {

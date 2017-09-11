@@ -1,6 +1,6 @@
 ﻿using SQLite.Net.Attributes;
 
-namespace Arte
+namespace artesanato
 {
     public class Cliente
     {

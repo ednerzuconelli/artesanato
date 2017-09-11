@@ -1,36 +1,39 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-[assembly: Dependency(typeof(Arte.AcessoBD))]
-namespace Arte
+[assembly: Dependency(typeof(artesanato.AcessoBD))]
+namespace artesanato
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ClientesPage : ContentPage
-    {
-        public ClientesPage()
-        {
-            InitializeComponent();
-            using (var dados = new AcessoBD())
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class ClientesPage : ContentPage
+	{
+		public ClientesPage ()
+		{
+			InitializeComponent ();
+			using (var dados = new AcessoBD())
+			{
+				this.ListaCliente.ItemsSource = dados.GetClientes();
+			}
+		}
+		protected void SalvarClicked(object sender, EventArgs e)
+		{
+			var cliente = new Cliente
+			{
+				Nome = this.NomeCliente.Text,
+				Email = this.EmailCliente.Text,
+				Fone = this.FoneCliente.Text,
+			};
 
-            {
-                this.ListaCliente.ItemsSource = dados.GetClientes();
-            }
-        }
-        protected void SalvarClicked(object sender, EventArgs e)
-        {
-            var cliente = new Cliente
-            {
-                Nome = this.NomeCliente.Text,
-                Email = this.EmailCliente.Text,
-                Fone = this.FoneCliente.Text,
-            };
-
-            using (var dados = new AcessoBD())
-            {
-                dados.InserirCliente(cliente);
-                this.ListaCliente.ItemsSource = dados.GetClientes();
-            }
-        }
-    }
+			using (var dados = new AcessoBD())
+			{
+				dados.InserirCliente(cliente);
+				this.ListaCliente.ItemsSource = dados.GetClientes();
+			}
+		}
+	}
 }

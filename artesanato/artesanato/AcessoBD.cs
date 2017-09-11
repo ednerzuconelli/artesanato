@@ -6,7 +6,7 @@ using Xamarin.Forms;
 using System.Collections.Generic;
 
 
-namespace Arte
+namespace artesanato
 {
     public class AcessoBD : IDisposable
     {

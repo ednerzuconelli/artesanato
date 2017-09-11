@@ -1,6 +1,6 @@
 ﻿using SQLite.Net.Interop;
 
-namespace Arte
+namespace artesanato
 {
     public interface IConfig
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Arte
+namespace artesanato
 {
     public class CustomTabbedPage : TabbedPage   {
 
