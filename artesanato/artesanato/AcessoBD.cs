@@ -18,7 +18,7 @@ namespace artesanato
                 var config = DependencyService.Get<IConfig>();
                 conexaoSQLite = new SQLiteConnection(config.Plataforma, Path.Combine(config.DiretorioSQLite, "Artes.db3"));
                 conexaoSQLite.CreateTable<Cliente>();
-                conexaoSQLite.CreateTable<Pedido>();
+                //conexaoSQLite.CreateTable<Pedido>();
             }
 
             public void InserirCliente(Cliente cliente)

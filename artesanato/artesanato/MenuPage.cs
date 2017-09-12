@@ -12,7 +12,7 @@ namespace artesanato
         public MenuPage()
         {
             Title = "Menu";
-            Children.Add(new MenuPage()
+            Children.Add(new ClientesPage()
             {
                 Title = "Pedido",
                 Icon = "pedido.png"
