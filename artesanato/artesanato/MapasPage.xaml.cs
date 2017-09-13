@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+//using Xamarin.Forms.Maps;
+// ...
+//Geocoder geoCoder;
 
 namespace artesanato
 {
@@ -14,7 +17,11 @@ namespace artesanato
     {
         public MapasPage()
         {
-            //InitializeComponent();
-        }
+			// var address = inputEntry.Text;
+			//var approximateLocations = await geoCoder.GetPositionsForAddressAsync(address);
+			//foreach (var position in approximateLocations)
+			//{
+			//	geocodedOutputLabel.Text += position.Latitude + ", " + position.Longitude + "\n";
+			}
     }
 }

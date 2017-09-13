@@ -27,6 +27,8 @@ namespace artesanato
 				Nome = this.NomeCliente.Text,
 				Email = this.EmailCliente.Text,
 				Fone = this.FoneCliente.Text,
+				Produto = this.ProdutoCliente.Text,
+				Endereco = this.EnderecoCliente.Text,
 			};
 
 			using (var dados = new AcessoBD())

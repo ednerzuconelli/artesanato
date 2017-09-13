@@ -15,12 +15,12 @@ namespace artesanato
             Children.Add(new ClientesPage()
             {
                 Title = "Pedido",
-                Icon = "pedido.png"
+                Icon = ""
             });
             Children.Add(new MapasPage()
             {
                 Title = "Mapa",
-                Icon = "icone-maps.png"
+                Icon = ""
             });
         }
     }

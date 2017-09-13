@@ -7,9 +7,13 @@
 
             <Entry x:Name="NomeCliente" Placeholder="Nome" TextColor="Black"/>
 
+            <Entry x:Name="FoneCliente" Placeholder="Fone" TextColor="Black" />
+            
             <Entry x:Name="EmailCliente" Placeholder="Email" Keyboard="Email" TextColor="Black"/>
 
-            <Entry x:Name="FoneCliente" Placeholder="Fone" TextColor="Black"/>
+            <Entry x:Name="EnderecoCliente" Placeholder="Endereco" TextColor="Black"/>
+
+            <Editor x:Name="ProdutoCliente"   />
 
             <Button x:Name="Salvar" Text="Salvar Dados" Clicked="SalvarClicked"/>
 

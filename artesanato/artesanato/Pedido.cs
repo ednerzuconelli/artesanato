@@ -10,7 +10,7 @@ namespace artesanato
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         
-        [MaxLength(100)]
+        [MaxLength(200)]
         public string Produto { get; set; }
        
         public decimal Valor { get; set; }
